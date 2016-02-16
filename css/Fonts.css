@@ -1,0 +1,48 @@
+@font-face {
+	font-family: 'Open Sans';
+	src: url('/Source/github/css/font/OpenSans-Regular.eot');
+	src: url('/Source/github/css/font/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+		 url('/Source/github/css/font/OpenSans-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Open Sans';
+	src: url('/Source/github/css/font/OpenSans-Bold.eot');
+	src: url('/Source/github/css/font/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+		 url('/Source/github/css/font/OpenSans-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Open Sans';
+	src: url('/Source/github/css/font/OpenSans-Italic.eot');
+	src: url('/Source/github/css/font/OpenSans-Italic.eot?#iefix') format('embedded-opentype'),
+		 url('/Source/github/css/font/OpenSans-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Open Sans';
+	src: url('/Source/github/css/font/OpenSans-Light.eot');
+	src: url('/Source/github/css/font/OpenSans-Light.eot?#iefix') format('embedded-opentype'),
+		 url('/Source/github/css/font/OpenSans-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Open Sans';
+	src: url('/Source/github/css/font/OpenSans-LightItalic.eot');
+	src: url('/Source/github/css/font/OpenSans-LightItalic.eot?#iefix') format('embedded-opentype'),
+		 url('/Source/github/css/font/OpenSans-LightItalic.ttf') format('truetype');
+	font-weight: 300;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Open Sans';
+	src: url('/Source/github/css/font/OpenSans-BoldItalic.eot');
+	src: url('/Source/github/css/font/OpenSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
+		 url('/Source/github/css/font/OpenSans-BoldItalic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}

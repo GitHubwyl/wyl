@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style type="text/css">
+			body {
+				box-sizing:border-box;
+				margin: 0;
+			}
+			.changeFrame {
+				box-sizing:border-box;
+				height: 400px;
+				width: 700px;
+				background: yellow;
+				margin: 0 auto;
+				position: relative;
+				overflow: hidden;
+				border: 1px solid red;
+			}
+			.changeFrame .imgList {
+				margin: 0;
+				padding: 0;
+				height: inherit;
+				width: 3490px;
+				position: relative;
+				
+			} 
+			.changeFrame .imgList li {	
+					
+				list-style: none;
+				float: left;
+				//transition:transform 2s;
+				//-moz-transition:-moz-transform 2s;
+				//-webkit-transition:-webkit-transform 2s;
+				//-o-transition:-o-transform 2s;
+
+			}
+			.changeFrame img {
+				height: 398px;
+				width: 698px;
+
+			}
+			.fadeIn {
+				position: relative;
+				overflow: hidden;
+			}
+			.ele1 {
+				height: 100px;
+				width: 200px;
+				background: yellow;
+				position: relative;
+				left: 100%;
+				opacity: 0;
+				transition:transform 1s,opacity 0.5s;
+			}
+			
+			/*以下为自清除*/
+			.clearfix:before,
+			.clearfix:after {
+  				content: " ";
+				display: table;
+					}
+			.clearfix:after {
+ 				clear: both;
+					}	
+		</style>
+	</head>
+	<body>
+		<div class="changeFrame clearfix">		
+			<ul class="imgList">
+				<li class="changImg"><a href="#"><img src="/img/douyu.jpg"></a></li>
+				<li class="changImg"><a href="#"><img src="/img/huya.png"></a></li>
+				<li class="changImg"><a href="#"><img src="/img/longzhu.jpg"></a></li>
+				<li class="changImg"><a href="#"><img src="/img/panda.jpg"></a></li>
+				<li class="changImg"><a href="#"><img src="/img/zhanqi.jpg"></a></li>
+			</ul>	
+		</div>
+		<script type="text/javascript">	
+			// 让该元素在页面中间			
+			// (function() {
+			// 	var changeFrame = document.getElementsByClassName("changeFrame")[0];
+			// 	var getWindowHeight = window.innerHeight;
+			// 	var position = (getWindowHeight - 400)/2;
+			// 	changeFrame.style.top = position + "px";
+			// }());
+			// 让图片切换
+			
+			(function() {
+				var	circlePlay = setInterval(change,4000);
+				var saveIndex,
+					index = 1;
+				function change() {
+					if(document.visibilityState ==='hidden') {
+						return;
+					}
+					var changImg = document.getElementsByClassName("changImg");
+					var position = 698*index + "px";
+					Array.prototype.map.call(changImg,function(e) {
+						e.style.transform = 'translate3d(-' + position + ',0,0)';
+						e.style.transition = 'all 0s ease 0s, -webkit-transform 0.7s ease';
+					});
+					index += 1;
+					if(index == 5) {
+						index =0;
+					}
+				}
+				// function changeStatus(e) {
+				// 				///console.log(this.visibilityState);
+				// 				if (this.visibilityState === 'hidden') {clearInterval(circlePlay);}else {
+				// 					circlePlay = setInterval(change,4000);
+				// 				}
+				// 			}	
+				// document.addEventListener("visibilitychange",changeStatus,false);	
+			}());
+				//setInterval(changeStatus,2000);
+				
+			
+		</script>
+		
+		<script type="text/javascript">
+			//让元素滑动过来
+			(function() {
+				setTimeout(fadeIn,1000);
+				function fadeIn() {
+					var ele1 = document.getElementsByClassName("ele1")[0];
+					ele1.style.transform = 'translate3d(-1366px,0,0)';
+					ele1.style.opacity = 1;
+				}						
+			}());
+			
+			
+		</script>
+
+		
+	</body>
+</html>
