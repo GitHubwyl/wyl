@@ -3,7 +3,7 @@
 	var setTime =2000;																//定时器时间
 	var time1 = setInterval(autoChangeImg,setTime);		//定时器
 	var init =function (){														//初始化,使其刚打开网站时,不是背景颜色,而直接是图片
-		$(".frame").css("backgroundImage","url(/../img/douyu.jpg)");
+		$(".frame").css("backgroundImage","url(/wyl/img/douyu.jpg)");
 		$(".focusDot").css("backgroundColor","white");
 		$(".focusDot").has(".focusDot1").css("backgroundColor","green");
 	}();
