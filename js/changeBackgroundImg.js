@@ -11,7 +11,7 @@
 		$(".focusDot").has(".focusDot"+elementNum).bind('mouseenter',changeAnimation);	//mouseenter事件
 		$(".focusDot").has(".focusDot"+elementNum).bind('mouseleave',changeAnimation1);	//mouseenter事件
 		function changeAnimation() {																										//自动切换图片
-			$(".frame").css("backgroundImage","url(/../img/"+imgName+")").animate({opacity:"1"},{duration:"animation-time",queue:true});
+			$(".frame").css("backgroundImage","url(/wyl/img/"+imgName+")").animate({opacity:"1"},{duration:"animation-time",queue:true});
 			$(".focusDot").css("backgroundColor","white");
 			$(".focusDot").has(".focusDot"+elementNum).css("backgroundColor","green");
   		clearInterval(time1);																													//清楚定时器
@@ -29,7 +29,7 @@
 
 	function autoChangeImg() {																												//自动切换函数
 		var imgList =["douyu.jpg","huya.png","longzhu.jpg","panda.jpg","zhanqi.jpg"];
-		$(".frame").css("backgroundImage","url(/../img/" + imgList[i++] + ")");
+		$(".frame").css("backgroundImage","url(/wyl/img/" + imgList[i++] + ")");
 		$(".focusDot").css("backgroundColor","white");
 		$(".focusDot").has(".focusDot"+i).css("backgroundColor","green");
 		if(i==5){
