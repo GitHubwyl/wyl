@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="/wyl/css/indexCSS.css" />
+		<link rel="stylesheet" href="/wyl/css/Fonts.css" />
+	</head>
+	<body>
+		<section class="pageHeader">
+			<h1>Web-Development</h1>
+			<h2>About my path of growth</h2>
+			<div class="btn">切换图像
+				<div class="btnFrame">
+					<a href="/wyl/通过display来换背景图.html" class="btn">通过display</a>
+					<a href="/wyl/动画换背景图.html" class="btn">通过left</a>
+					<a href="/wyl/viaTransform.html" class="btn">通过transform</a>
+				</div>
+			</div>
+			<div class="btn">3D效果
+				<div class="btnFrame secondBtn">
+					<a href="/wyl/3dTest.html" class="btn">3D</a>
+
+				</div>
+				<!-- <div class="btnFrame">
+					<a href="#" class="btn">class 1</a>
+					<a href="#" class="btn">class 2</a>
+					<a href="#" class="btn">class 3</a>
+				</div> -->
+			</div>
+			<div class="btn">project 3
+				<!-- <div class="btnFrame">
+					<a href="#" class="btn">class 1</a>
+					<a href="#" class="btn">class 2</a>
+					<a href="#" class="btn">class 3</a>
+				</div> -->
+			</div>
+		</section>	
+		<section class="mainContent">
+			<h3>About this page</h3>
+			<p>This page contains my learning web development, this page will update from time to time, update includes: knowledge learned recently, the use of the new API, as well as experience BUG and solutions, but given my limited capacity, if the wrong place, you can tell me by email</p>
+			<h3>切换图像</h3>
+			<p>鼠标移动到在上面按钮的第一个,分别有三种方式,下面来说明一下利弊</p>
+			<ul>
+				<li>通过display:这种方面很简单,就是切换该区域的背景,利用js来操作</li>
+				<li>通过left:这个方法在很多网站都有用到,该方法的好处就是实现起来比较简单,并且可以通过焦点"点"来给用户操作自己想看的内容,通过js编写定时器,还有一些事件绑定,就可以实现,具体可以看相应的js文件</li>
+				<li>通过transform:通过CSS3的transform实现这个功能,最大的好处就是,可以硬件加速,因为任何通过js来操作都会影响页面的性能,所以我一直认为"能用CSS来实现的就不用JS,能用过渡属性来实现的就少点用动画",后半句其实我觉得其实没必要那么纠结,因为动画@keyframes易操作,而如果多个复杂的过渡,还不如用动画@keyframes,该实现具体可以查看相应的html文件</li>
+			</ul>
+			<footer>
+				<span><a href="http://githubwyl.github.io/wyl/">This page</a> is maintained by <a href="https://github.com/GitHubwyl">GitHubwyl</a>.</span>
+			</footer>
+		</section>
+		<script type="text/javascript" src="/wyl/js/indexJS.js"></script>
+			
+	</body>
+</html>

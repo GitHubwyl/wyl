@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style type="text/css">
+			.containerposition {
+				height: 200px;
+				width: 300px;
+			//	overflow: hidden;
+				margin: 200px ;
+
+
+			}
+			.container {
+				height: 200px;
+				width: 300px;
+				font-size: 0;
+				
+
+				transform-style: preserve-3d;
+				//transform-origin:150px 0;
+				transform: rotateY(0deg);
+				-webkit-transition:-webkit-transform 2s;
+			}
+			.container:hover {
+				transform: rotateY(-270deg);
+			}
+			.page1 {
+				position: absolute;
+				height:200px;
+				width:300px;
+				background: url("/wyl/img/yueliang.jpg");
+				background-size: 100% 100%;
+				display: inline-block;
+				transform: rotateY(0deg) translateZ(150px);
+			}
+			.page2 {
+				position: absolute;
+				height:200px;
+				width:300px;
+				background: url("/wyl/img/sealed.jpg");
+				background-size: 100% 100%;
+				display: inline-block;
+			//	transform-origin:left 0;
+				transform: rotateY(90deg) translateZ(150px);
+			}
+			.page3 {
+				position: absolute;
+				height:200px;
+				width:300px;
+				background: url("/wyl/img/qiqiu.jpg");
+				background-size: 100% 100%;
+				display: inline-block;
+			//	transform-origin:left 0;
+				transform: rotateY(180deg) translateZ(150px);
+			}
+			.page4 {
+				position: absolute;
+				height:200px;
+				width:300px;
+				background: url("/wyl/img/latte.jpg");
+				background-size: 100% 100%;
+				display: inline-block;
+			//	transform-origin:left 0;
+				transform: rotateY(270deg) translateZ(150px);
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="containerposition">
+			<div class="container">
+				<div class="page1"></div>
+				<div class="page2"></div>
+				<div class="page3"></div>
+				<div class="page4"></div>
+			</div>
+		</div>
+	</body>
+</html>
